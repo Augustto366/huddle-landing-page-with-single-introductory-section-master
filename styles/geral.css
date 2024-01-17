@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    background: url(../images/bg-desktop.svg) hsl(257, 40%, 49%) no-repeat;
+    background-size: contain;
+ }   
+
+ section#logo-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+ }
+
+ section#logo-image > img#logo {
+    align-self: flex-start;
+    
+ }
+
+ section#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+ }
+
+ div#icons > i {
+    color: #fff;
+    font-size: 1.1em;
+    border: 1px solid #fff;
+    border-radius: 100%;
+ }
