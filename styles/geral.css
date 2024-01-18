@@ -1,45 +1,79 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 body, html {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: url(../images/bg-desktop.svg) hsl(257, 40%, 49%) no-repeat;
+    background-size: contain;
 }
 
 * {
+    font-family: 'Poppins', sans-serif;
     margin: 0px;
     padding: 0px;
 }
 
-body {
-    display: flex;
-    background: url(../images/bg-desktop.svg) hsl(257, 40%, 49%) no-repeat;
-    background-size: contain;
- }   
-
- section#logo-image {
+ section#logo-image :not(#logo) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 70px;
+    
  }
 
- section#logo-image > img#logo {
-    align-self: flex-start;
-    
+ section#logo-image > #logo {
+   margin-top: -15px;
+   padding: 70px;
+   width: 200px;
+ }
+
+ section#logo-image > #image {
+   padding: 0px 0px 0px 70px;
  }
 
  section#content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 70px;
+    align-items: flex-start;
+    margin-left: 50px;
  }
 
- div#icons > i {
-    color: #fff;
-    font-size: 1.1em;
-    border: 1px solid #fff;
-    border-radius: 100%;
+ section#content > h1 {
+   font-size: 2.5em;
  }
+
+ section#content > p {
+   width: 500px;
+ }
+
+ button {
+   background-color: #fff;
+   color: hsl(257, 40%, 49%);
+   width: 150px;
+   height: 40px;
+   padding: 10px;
+   border: none;
+   border-radius: 50px;
+   box-shadow: 6px 8px 20px -5px #00000091;
+ }
+
+ div#icons {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   align-items: flex-end;
+   gap: 15px;
+   padding: 0px 30px 40px 0px;
+ }
+
+div#icons > i {
+   color: #fff;
+   padding: 10px;
+   font-size: 1.1em;
+   border: 1px solid #ffffff;
+   border-radius: 50%;
+}
