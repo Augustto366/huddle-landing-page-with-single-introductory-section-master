@@ -1,5 +1,59 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 375px) {
-    
+@media screen and (min-width: 360px) and (max-width: 380px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: url(../images/bg-mobile.svg) no-repeat;
+        background-size: contain;
+    }
+
+    section#logo-image {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    section#logo-image > #logo {
+        width: 140px;
+        padding: 0px;
+        margin-top: 220px;
+    }
+
+    section#logo-image > #image {
+        width: 300px;
+        padding: 0px;
+    }
+
+    section#content {
+        align-items: center;
+        text-align: center;
+        padding: 0px;
+    }
+
+    section#content > h1 {
+        font-size: 1.5em;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    section#content > p {
+        padding: 20px;
+        width: 330px;
+    }
+
+    button {
+        width: 210px;
+    }
+
+    div#icons {
+        display: flex; 
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 0px 50px 0px;
+        margin-top: 80px;
+    }
 }
